@@ -1,3 +1,4 @@
+from os import link
 from playwright.sync_api import sync_playwright
 import time
 from bs4 import BeautifulSoup
@@ -12,7 +13,7 @@ class Robo3:
         page = browser.new_page()
         
         try:
-            page.goto("https://www.contabeis.com.br/conteudo/")
+            page.goto("https://www.contabeis.com.br/conteudo/") #Acessando URL
             print('\nURL acessada com sucesso!')           
         except HTTPError as erro:
             print('Erro de requisição HTTP: ' + erro.status, erro.reason)
@@ -25,13 +26,12 @@ class Robo3:
     
         soup = BeautifulSoup(html_content, 'html.parser') #Parseando os dados para deixar mais organizado
 
-        teste = soup.find("a", attrs={"class": "editoria-contabil"})
-        teste2 = teste.attrs
-        teste3 = teste2['href']
-       # print(teste2)
-       # print(teste3)
+        link = soup.find("a", attrs={"class": "editoria-contabil"}) #Pegando redirecionamento para a página que contém somente conteúdos de contabilidade
+        link2 = link.attrs 
+        link3 = link2['href'] # Pegando somente o href do redirecionamento
+
         try:
-            page.goto("https://www.contabeis.com.br/"+teste3) #Acessando URL novamente para poder redirecionar para a página só de conteúdos contábeis
+            page.goto("https://www.contabeis.com.br/"+link3) #Unindo URL e ccessando URL novamente para poder redirecionar para a página só de conteúdos contábeis
             time.sleep(2)          
         except HTTPError as erro:
             print('Erro de requisição HTTP: ' + erro.status, erro.reason)
@@ -39,14 +39,11 @@ class Robo3:
             print('Erro ao acessar a URL: '+ erro.reason)
         
         html_content2 = page.inner_html('div.tituloInterno') #Marcação da section Pai
-        soup2 = BeautifulSoup(html_content2, 'html.parser') 
-        #print(soup2)
-        parte01Categoria = soup2.em.get_text()
-        parte02Categoria = soup2.b.get_text()
-        categoria = parte01Categoria + ' ' + parte02Categoria #Unificando titulo da categoria contábil
-        #print(parte01Categoria)
-        #print(parte02Categoria)
-        #print(categoria)
+        soup2 = BeautifulSoup(html_content2, 'html.parser')  #Parseando
+
+        parte01Categoria = soup2.em.get_text() #Pegando somente o text da tag em
+        parte02Categoria = soup2.b.get_text()  #Pegando somente o text da tag b
+        categoria = parte01Categoria + ' ' + parte02Categoria #Unificando categoria da categoria contábil
 
         html_content3 = page.inner_html('section.materiasList') #Marcação da section Pai
         time.sleep(2)
@@ -54,19 +51,19 @@ class Robo3:
         soup3 = BeautifulSoup(html_content3, 'html.parser')
 
         try:
-            postCont = []
-            for posts in soup3.find_all("article", attrs={"class": "editoria-contabil"}):
-                #print(post)
+            postCont = [] #Lista vazia
+            for posts in soup3.find_all("article", attrs={"class": "editoria-contabil"}): #Percorrendo a tag article de class editoria-contabil
                 content = []
 
-                categoriaPost = categoria
-                titulo = posts.strong.get_text()
-                subTitulo = posts.h2.get_text()
-                data = posts.em.get_text()
-                linkImage = posts.img['data-src']  #Pegando o src da imagem
-                linkImageCompleto = 'https://www.contabeis.com.br/'+linkImage #Unificando dominio com src da imagem para gerar um link
-                linkPostagem = posts.ul['href']
+                categoriaPost = categoria          #Pegando a categoria já unificada
+                titulo = posts.strong.get_text()   #Pegando somente o text da tag strong
+                subTitulo = posts.h2.get_text()    #Pegando somente o text da tag h2
+                data = posts.em.get_text()         #Pegando somente o text da tag em
+                linkImage = posts.img['data-src']  #Pegando somente o data-src da tag img (pedaço de link da imagem)
+                linkImageCompleto = 'https://www.contabeis.com.br/'+linkImage #Unificando dominio com data-src da imagem para gerar um link válido da imagem
+                linkPostagem = posts.ul['href']    #Pegando o link da postagem
 
+                #Adicionando todos os dados dentro da lista content
                 content.append(categoriaPost)
                 content.append(titulo) 
                 content.append(subTitulo) 
@@ -74,8 +71,10 @@ class Robo3:
                 content.append(linkImageCompleto)
                 content.append(linkPostagem)
                 
+                #Adicionando a lista content dentro da lista postCont
                 postCont.append(content) 
 
+                #Testes de print
                 print('------------------***********************------------------')
                 print(categoriaPost)
                 print(titulo)
@@ -90,14 +89,15 @@ class Robo3:
 
 
         try:
+            #Criação do dataframe usando pandas
             dados_df = pd.DataFrame(postCont, columns=['Categoria', 'Titulo', 'SubTitulo', 'Data', 'LinkImage', 'LinkPostagem'])
            
             print(dados_df)
-                                        
+
+            #Pegando o size dos elementos do dataframe (não consegui deixar dentro do JSON)                                 
             size = len(dados_df)
             print('\nsize:', size)
      
-          
         except:
             print("\nErro na estrutura de DataFrame!")
 
@@ -110,7 +110,7 @@ class Robo3:
         except:
             print("\nErro na estrutura de criação de dicionário para o DataFrame!")
         
-        browser.close()
+        browser.close() #Fechando o browser
         
         try:
             #Converter e criar arquivo json
