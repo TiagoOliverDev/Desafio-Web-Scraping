@@ -10,7 +10,6 @@ import pandas as pd
 import json
 from urllib.error import URLError, HTTPError
 
-
 class Robo3:
 
     with sync_playwright() as p:

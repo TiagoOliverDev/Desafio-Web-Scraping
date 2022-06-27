@@ -2,6 +2,14 @@
     "Dados": [
         {
             "Categoria": "CONTEÚDO Contábil",
+            "Titulo": "Evento",
+            "SubTitulo": "Conta Azul Con 2022: confira o que rolou no segundo dia de evento",
+            "Data": "Hoje 10:30:01",
+            "LinkImage": "https://www.contabeis.com.br/assets/img/news/n_52035_09362833740741d8b449a2cf887d297d.jpg?v=1656336667",
+            "LinkPostagem": "https://www.contabeis.com.br/noticias/52035/conta-azul-con-2022-confira-o-que-rolou-no-evento/"
+        },
+        {
+            "Categoria": "CONTEÚDO Contábil",
             "Titulo": "PIX NAS ELEIÇÕES 2022",
             "SubTitulo": "TSE aprova uso do Pix para captação de recursos de campanhas eleitorais e doações",
             "Data": "25/06/2022 11:00",
@@ -231,14 +239,6 @@
             "Data": "26/05/2022 10:30",
             "LinkImage": "https://www.contabeis.com.br/assets/img/news/n_51687_332914f7f5b18746ffc20bac57a11ff4.jpg?v=1653571801",
             "LinkPostagem": "https://www.contabeis.com.br/noticias/51687/ecd-e-ecf-novas-versoes-estao-disponiveis-para-download/"
-        },
-        {
-            "Categoria": "CONTEÚDO Contábil",
-            "Titulo": "RENDIMENTOS",
-            "SubTitulo": "Quais tipos de rendimentos são tributáveis na declaração de IR?",
-            "Data": "25/05/2022 17:30",
-            "LinkImage": "https://www.contabeis.com.br/assets/img/news/n_51647_27dc748df9427a5a05c92ea9b79c1932.jpg?v=1653510601",
-            "LinkPostagem": "https://www.contabeis.com.br/noticias/51647/ir-tipos-de-rendimentos-tributaveis-na-declaracao/"
         }
     ]
 }
