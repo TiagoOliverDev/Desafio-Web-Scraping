@@ -9,6 +9,9 @@
     <a href="#autor" >Autor</a>
 </p>
 
+<img align="center" src="https://github.com/Paull20-20/Desafio-Web-Scraping/blob/master/imagens/print1.1.png">
+<img align="center" src="https://github.com/Paull20-20/Desafio-Web-Scraping/blob/master/imagens/print2.png">
+<img align="center" src="https://github.com/Paull20-20/Desafio-Web-Scraping/blob/master/imagens/print3.png">
 
 ### Features
 
