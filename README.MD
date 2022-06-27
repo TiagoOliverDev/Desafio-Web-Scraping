@@ -9,6 +9,7 @@
     <a href="#autor" >Autor</a>
 </p>
 
+
 <img align="center" src="https://github.com/Paull20-20/Desafio-Web-Scraping/blob/master/imagens/print1.1.png">
 <img align="center" src="https://github.com/Paull20-20/Desafio-Web-Scraping/blob/master/imagens/print2.png">
 <img align="center" src="https://github.com/Paull20-20/Desafio-Web-Scraping/blob/master/imagens/print3.png">
@@ -40,10 +41,10 @@
 <h2>Tecnologias</h2>
 
 
-<a href="https://www.anaconda.com/">, Python-3.8.10</a><br>
-<a href="https://www.anaconda.com/">, BeautifulSoup,</a><br>
-<a href="https://www.anaconda.com/">, Pandas</a><br>
-<a href="https://www.anaconda.com/">, Playwright</a><br>
+<a href="https://www.anaconda.com/">. Python-3.8.10</a><br>
+<a href="https://www.anaconda.com/">. BeautifulSoup,</a><br>
+<a href="https://www.anaconda.com/">. Pandas</a><br>
+<a href="https://www.anaconda.com/">. Playwright</a><br>
 
 </div>
 
