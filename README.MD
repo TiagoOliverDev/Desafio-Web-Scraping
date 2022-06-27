@@ -26,7 +26,6 @@
 - [x] Fazer isso usando uma classe priorizando todos os aspectos de orientação a objetos e descrever o que cada função faz.
 
 
-<br>
 <div class="sobre">
 
 <h2>Desafio</h2>
@@ -38,7 +37,7 @@
 
 </div>
 
-<br>
+
 <div class="tecnologias">
 
 <h2>Tecnologias</h2>
@@ -55,7 +54,7 @@
 
 </div>
 
-<br>
+
 <div class="pre-requisitos">
 
 <h2>Pré-requisitos</h2>
@@ -70,16 +69,26 @@
 
 <h2>Como utilizar</h2>
 
+<h3>Crie uma pasta em seu PC, de preferência usa o prompt Anaconda, após criar-la, entre nela!</h3>
+<p>mkdir pastaTeste</p>
+<p>cd pastaTeste</p>
+
 <h3>Clone este repositório</h3>
 <p>git clone https://github.com/Paull20-20/Desafio-Web-Scraping.git</p>
 
-<h3>Acesse a pasta do projeto pelo anaconda prompt<h3>
+<h3>Após clonar, abra o projeto pelo Vs code (pelo Anaconda)</h3>
+<p>code .</p>
+
+<h3>Navege até a pasta do projeto</h3>
 <p>cd Desafio-Web-Scraping</p>
 
 <h3>Instale as dependências</h3>
 <p>pip install playwright </p>
 <p>playwright install</p>
 <p>pip install beautifulsoup4</p>
+
+<h3>Rode o projeto</h3>
+<p>python robo3.py</p>
 
 
 </div>
@@ -90,6 +99,8 @@
 <h2>Autor</h2>
 
 <img align="center" height="100" width="100" style="max-width: 100%;" src="https://github.com/Paull20-20/Desafio-Web-Scraping/blob/master/imagens/ft.jpeg">
+<br/>
+<h2>Feito por Tiago Oliveira</h2>
 <br/>
 <a href="https://www.instagram.com/thiagolopes22_/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a> <a href = "mailto:paulloholiveira77@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a> <a href="https://www.linkedin.com/in/tiago-oliveira-49a2a6205/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
 
