@@ -1,18 +1,20 @@
 <p align="center"> Desafio técnico Web Scraping </p>
 
 <p align="center"> 
-    <a href="#sobre" >Sobre</a> .
-    <a href="#roadmap" >Roadmap</a> .
-    <a href="#tecnologias" >Tecnologias</a> .
-    <a href="#pre-requisitos" >Pré-requisitos</a> .
-    <a href="#como-utilizar" >Como utilizar</a> .
-    <a href="#autor" >Autor</a>
+    <a href="#sobre" >Sobre </a> .
+    <a href="#tecnologias" > Tecnologias </a> .
+    <a href="#pre-requisitos" > Pré-requisitos </a> .
+    <a href="#como-utilizar" > Como utilizar </a> .
+    <a href="#autor" > Autor</a>
 </p>
 
+#
 
 <img align="center" src="https://github.com/Paull20-20/Desafio-Web-Scraping/blob/master/imagens/print1.1.png">
 <img align="center" src="https://github.com/Paull20-20/Desafio-Web-Scraping/blob/master/imagens/print2.png">
 <img align="center" src="https://github.com/Paull20-20/Desafio-Web-Scraping/blob/master/imagens/print3.png">
+
+#
 
 ### Features
 
@@ -22,6 +24,7 @@
 - [x] Trazer somente o titulo, categoria data ou hora de publicação, link da imagem se possvel e link para a publicação atual.
 - [x] Retornar o conteúdo como um json trazendo dentro de uma lista além do retorno adicionar tambem a quantidade total de assuntos dentro do mesmo.
 - [x] Fazer isso usando uma classe priorizando todos os aspectos de orientação a objetos e descrever o que cada função faz.
+
 
 <br>
 <div class="sobre">
@@ -42,16 +45,12 @@
 
 <ul>
 
-<li><a href="https://www.anaconda.com/">. Python-3.8.10</a></li>
-<li><a href="https://www.anaconda.com/">. BeautifulSoup</a></li>
-<li><a href="https://www.anaconda.com/">. Pandas</a></li>
-<li><a href="https://www.anaconda.com/">. Playwright</a></li>
-
+<li><a href="https://www.python.org/downloads/release/python-3810/">Python-3.8.10</a></li>
+<li><a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">BeautifulSoup</a></li>
+<li><a href="https://pandas.pydata.org/">Pandas</a></li>
+<li><a href="https://playwright.dev/python/docs/intro">Playwright</a></li>
 
 </ul>
-
-
-
 
 
 </div>
@@ -66,6 +65,37 @@
 
 
 </div>
+
+<div class="como-utilizar">
+
+<h2>Como utilizar</h2>
+
+<h2># Clone este repositório</h2>
+<p>git clone https://github.com/ARTHURPC03/WeatherApp</p>
+
+<h2># Acesse a pasta do projeto pelo anaconda prompt/h2>
+<p>cd Desafio-Web-Scraping</p>
+
+<h2># Instale as dependências</h2>
+<p>pip install playwright </p>
+<p>playwright install</p>
+<p>pip install beautifulsoup4</p>
+
+
+</div>
+
+
+<div class="autor">
+
+<h2>Autor</h2>
+
+<img align="center" height="100" width="100" style="max-width: 100%;" src="https://github.com/Paull20-20/Desafio-Web-Scraping/blob/master/imagens/ft.jpeg">
+<br/>
+<a href="https://www.instagram.com/thiagolopes22_/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a> <a href = "mailto:paulloholiveira77@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a> <a href="https://www.linkedin.com/in/tiago-oliveira-49a2a6205/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+
+
+</div>
+
 
 
 

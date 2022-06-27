@@ -1,10 +1,5 @@
-from dataclasses import field
-from unittest import result
-from numpy import size, str0
 from playwright.sync_api import sync_playwright
-from datetime import date, datetime
 import time
-import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 import json
