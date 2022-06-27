@@ -71,7 +71,7 @@
 <h2>Como utilizar</h2>
 
 <h3>Clone este repositório</h3>
-<p>git clone https://github.com/ARTHURPC03/WeatherApp</p>
+<p>git clone https://github.com/Paull20-20/Desafio-Web-Scraping.git</p>
 
 <h3>Acesse a pasta do projeto pelo anaconda prompt<h3>
 <p>cd Desafio-Web-Scraping</p>
