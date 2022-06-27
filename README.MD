@@ -40,11 +40,19 @@
 
 <h2>Tecnologias</h2>
 
+<ul>
 
-<a href="https://www.anaconda.com/">. Python-3.8.10</a><br>
-<a href="https://www.anaconda.com/">. BeautifulSoup,</a><br>
-<a href="https://www.anaconda.com/">. Pandas</a><br>
-<a href="https://www.anaconda.com/">. Playwright</a><br>
+<li><a href="https://www.anaconda.com/">. Python-3.8.10</a></li>
+<li><a href="https://www.anaconda.com/">. BeautifulSoup</a></li>
+<li><a href="https://www.anaconda.com/">. Pandas</a></li>
+<li><a href="https://www.anaconda.com/">. Playwright</a></li>
+
+
+</ul>
+
+
+
+
 
 </div>
 
