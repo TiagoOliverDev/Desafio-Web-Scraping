@@ -70,13 +70,13 @@
 
 <h2>Como utilizar</h2>
 
-<h2># Clone este repositório</h2>
+<h3>Clone este repositório</h3>
 <p>git clone https://github.com/ARTHURPC03/WeatherApp</p>
 
-<h2># Acesse a pasta do projeto pelo anaconda prompt/h2>
+<h3>Acesse a pasta do projeto pelo anaconda prompt<h3>
 <p>cd Desafio-Web-Scraping</p>
 
-<h2># Instale as dependências</h2>
+<h3>Instale as dependências</h3>
 <p>pip install playwright </p>
 <p>playwright install</p>
 <p>pip install beautifulsoup4</p>
