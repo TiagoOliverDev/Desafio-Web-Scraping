@@ -48,7 +48,7 @@
 
 - To install all the app dependencies on the command line run
 - ```
-  pip install -r requirements.txt  playwright install 
+  pip install -r requirements.txt
   ``` 
 - To install navegators
 - ```
