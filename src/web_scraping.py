@@ -53,7 +53,7 @@ class Web_scraping:
             fp = open('data/dados_completo.json', 'w')
             fp.write(js)
             fp.close()
-            print("\nArquivo JSON criado com sucesso!")
+            print("\nArquivo JSON criado com sucesso! Olhe dentro da pasta 'data' na raiz do projeto.")
         except Exception as e:
             print("\nErro na estrutura de converção para arquivo JSON:", e)
 
